@@ -1,0 +1,30 @@
+body {
+  background-color: #f3f3f3;
+  font-family: 'Roboto Mono', monospace;
+}
+
+a {
+  color: black;
+}
+
+#titulo {
+  text-align: center;
+}
+
+#titulo_descricao {
+  text-align: left;
+}
+
+#titulo_resultado {
+  text-align: left;
+}
+
+#area_botoes {
+  text-align: center;
+}
+
+/*area do jogo 8ball*/
+#magic8ball {
+  font-size: 1em;
+}
+/*# sourceMappingURL=style.css.map */
