@@ -1,7 +1,6 @@
 
 body{
     background-color: rgb(243, 243, 243);
-    font-family: 'Roboto Mono', monospace;
 }
 a{
     color:black;
@@ -18,7 +17,9 @@ a{
 #area_botoes{
     text-align: center;
 }
-/*area do jogo 8ball*/
-#magic8ball{
-    font-size: 1em;
+.tag{
+    margin-left:5px;
+}
+.botaoAcessar{
+    margin:20px;
 }

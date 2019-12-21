@@ -1,6 +1,5 @@
 body {
   background-color: #f3f3f3;
-  font-family: 'Roboto Mono', monospace;
 }
 
 a {
@@ -23,8 +22,11 @@ a {
   text-align: center;
 }
 
-/*area do jogo 8ball*/
-#magic8ball {
-  font-size: 1em;
+.tag {
+  margin-left: 5px;
+}
+
+.botaoAcessar {
+  margin: 20px;
 }
 /*# sourceMappingURL=style.css.map */

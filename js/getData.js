@@ -1,5 +1,5 @@
 //area para os layouts
-var area_layouts = document.getElementById("area_link");
+var area_links = document.getElementById("area_link");
 //ajax
 
 fetch('./json/database.json').then(function(response){
@@ -10,36 +10,57 @@ fetch('./json/database.json').then(function(response){
 });
 //renderiza a div com todos os layouts
 function renderDivLayouts(data){
-    var div_layouts = "";
-    div_layouts += "<div class='row'>";
+    var div_links = "";
+    div_links += "<div class='row'>";
     for(let indexItem = 0; indexItem < data.length ; indexItem++){
-        div_layouts += renderDivLayout(data,indexItem);
+        div_links += renderDivLink(data,indexItem);
     }
-    div_layouts += "</div>";
-    area_layouts.insertAdjacentHTML('beforeend',div_layouts);
+    div_links += "</div>";
+    area_links.insertAdjacentHTML('beforeend',div_links);
 }
 //renderiza uma div para layout
-function renderDivLayout(data,indexItem){
+function renderDivLink(data,indexItem){
     let divLayout = "";
-    divLayout += "<div class='col-sm-12 col-md-6 layoutSite'>";
-    divLayout += "<h2>" + data[indexItem].nome + "</h2>";
-    divLayout += "<p class='layoutSite__descricao'>" + data[indexItem].descricao + "</p>";
-    divLayout += "<div class='btn-group'>";
+    divLayout += "<div class='col-sm-12 layoutSite'>";
+    divLayout += "<h3>" + data[indexItem].nome + "</h3>";
+    divLayout += renderTags(data,indexItem);
+    divLayout += "<div class='btn-group col-sm-12'>";
     divLayout += renderButtonAcess(data,indexItem);
-    divLayout += renderButtonSourceCode(data,indexItem);
     divLayout += "</div>";
     divLayout += "</div>";
     return divLayout;
 }
+//render tags
+function renderTags(data,indexItem){
+    let divTags = "<div class='tags'>";
+    divTags += renderTagTipeMidia(data,indexItem);
+    divTags += renderTagCategoria(data,indexItem);
+    divTags += renderTagIdioma(data,indexItem);
+    divTags += "</div>";
+    return divTags; 
+}
+//renderiza renderTagTipeMidia
+function renderTagTipeMidia(data,indexItem){
+    let tagTipeMidia = "";
+    tagTipeMidia += "<span class='tag badge badge-secondary'>" + data[indexItem].tipo_midia + "</span>";
+    return tagTipeMidia;
+}
+//renderiza tag categoria
+function renderTagCategoria(data,indexItem){
+    let tagCategoria = "";
+    tagCategoria += "<span class='tag badge badge-secondary'>" + data[indexItem].categoria + "</span>";
+    return tagCategoria;
+}
+//renderiza tag idioma
+function renderTagIdioma(data,indexItem){
+    let tagIdioma = "";
+    tagIdioma += "<span class='tag badge badge-secondary'>" + data[indexItem].idioma + "</span>";
+    return tagIdioma;
+}
 //renderiza botao para acessar o site
 function renderButtonAcess(data,indexItem){
     let btn_acess = "";
-    btn_acess += "<a href='"+ data[indexItem].link.url + "' alt='" + data[indexItem].link.alt + "' class='btn btn-sm btn_custom btn-outline-dark btn-group-item'>acessar</a>";
+    btn_acess += "<a href='"+ data[indexItem].link.url + "' alt='" + data[indexItem].link.alt + "' class='btn btn-lg btn_custom btn-outline-dark btn-group-item botaoAcessar'>acessar</a>";
     return btn_acess;
 }
-//renderiza botao para ver codigo fonte
-function renderButtonSourceCode(data,indexItem){
-    let btn_sourceCode  = "";
-    btn_sourceCode += "<a href='"+ data[indexItem].sourceCode.url + "' alt='" + data[indexItem].sourceCode.alt + "' class='btn btn-sm btn_custom btn-outline-dark btn-group-item'>código fonte</a>";
-    return btn_sourceCode;
-}
+
