@@ -60,7 +60,7 @@ function renderTagIdioma(data,indexItem){
 //renderiza botao para acessar o site
 function renderButtonAcess(data,indexItem){
     let btn_acess = "";
-    btn_acess += "<a href='"+ data[indexItem].link.url + "' alt='" + data[indexItem].link.alt + "' class='btn btn-lg btn_custom btn-outline-dark btn-group-item botaoAcessar'>acessar</a>";
+    btn_acess += "<a href='"+ data[indexItem].link + "' class='btn btn-lg btn_custom btn-outline-dark btn-group-item botaoAcessar'>acessar</a>";
     return btn_acess;
 }
 
