@@ -12,5 +12,12 @@
         "categoria":"rede de computadores",
         "link":"https://www.youtube.com/playlist?list=PLKpEI5MI0vlrP00OB63M_isVbruFJ_kWm",
         "idioma":"portugues"
+    },
+    {
+        "nome":"[Mathematical Linguistics] Introduction and Overview",
+        "tipo_midia":"video/playlist",
+        "categoria":"matematica",
+        "link":"https://www.youtube.com/watch?v=nQYMnyEZ0Ws&list=PLDDGPdw7e6AhOute8PxF1qccHYGtFZdbl",
+        "idioma":"inglês"
     }
 ]
