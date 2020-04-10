@@ -1,13 +1,13 @@
 [
     {
-        "nome":"Minicurso Introdução à Redes",
+        "nome":"Minicurso Introdução a Redes",
         "tipo_midia":"video/playlist",
         "categoria":"rede de computadores",
         "link":"https://www.youtube.com/playlist?list=PLLXMG3RVAx2u4pK8fLSrd0r6Mhs4ZOsqt",
         "idioma":"portugues"
     },
     {
-        "nome":"Tópicos Avançados (Wireless)",
+        "nome":"Topicos Avançados (Wireless)",
         "tipo_midia":"video/playlist",
         "categoria":"rede de computadores",
         "link":"https://www.youtube.com/playlist?list=PLKpEI5MI0vlrP00OB63M_isVbruFJ_kWm",
@@ -18,10 +18,10 @@
         "tipo_midia":"video/playlist",
         "categoria":"matematica",
         "link":"https://www.youtube.com/watch?v=nQYMnyEZ0Ws&list=PLDDGPdw7e6AhOute8PxF1qccHYGtFZdbl",
-        "idioma":"inglês"
+        "idioma":"ingles"
     },
     {
-        "nome":"Curso Redes de Computadores Grátis",
+        "nome":"Curso Redes de Computadores Gratis",
         "tipo_midia":"video/playlist",
         "categoria":"rede de computadores",
         "link":"https://www.youtube.com/playlist?list=PLHz_AreHm4dkd4lr9G0Up-W-YaHYdTDuP",
