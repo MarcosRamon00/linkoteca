@@ -19,5 +19,12 @@
         "categoria":"matematica",
         "link":"https://www.youtube.com/watch?v=nQYMnyEZ0Ws&list=PLDDGPdw7e6AhOute8PxF1qccHYGtFZdbl",
         "idioma":"inglês"
+    },
+    {
+        "nome":"Curso Redes de Computadores Grátis",
+        "tipo_midia":"video/playlist",
+        "categoria":"rede de computadores",
+        "link":"https://www.youtube.com/playlist?list=PLHz_AreHm4dkd4lr9G0Up-W-YaHYdTDuP",
+        "idioma":"portugues"
     }
 ]
