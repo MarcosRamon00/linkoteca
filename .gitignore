@@ -1,1 +1,3 @@
 .vscode
+.managerJson.py
+lib_managerJson/*
