@@ -1,3 +1,7 @@
 .vscode
-.managerJson.py
-lib_managerJson/*
+
+
+#arquivos em desenvolvimento
+managerJson.py
+lib/*
+json/database_testes.json
